@@ -2,10 +2,10 @@ pipeline {
   agent any
   stages{
 
-  stage('build') {
+  stage('test') {
        steps{
-          bat './gradlew build'
-         // archiveArtifacts 'build/libs/*.jar'
+          bat './gradlew test'
+          archiveArtifacts 'build/test-results/*.xml'
        }
    }
 
