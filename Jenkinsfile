@@ -1,10 +1,9 @@
 pipeline {
   agent any
-  stages {
-
-
-
-
+  stages('build') {
+   steps{
+      bat 'gradle build'
+   }
 }
 
 }
