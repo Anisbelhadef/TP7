@@ -5,7 +5,7 @@ pipeline {
   stage('test') {
        steps{
           bat './gradlew test'
-          archiveArtifacts 'build/test-results/*.xml'
+          archiveArtifacts 'build/test-results/test/*.xml'
        }
    }
 
