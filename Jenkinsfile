@@ -3,16 +3,16 @@ pipeline {
   stages{
 
   stage('build') {
-   steps{
-      bat './gradlew build'
-      archiveArtifacts 'build/libs/*.jar'
-   }
+       steps{
+          bat './gradlew build'
+          archiveArtifacts 'build/libs/*.jar'
+       }
    }
 
     stage('Generate Cucumber Reports') {
-               steps {
-                       bat './gradlew cucumber'
+       steps {
+           bat './gradlew cucumber'
                }
-           }
-   }
+    }
+}
 }
