@@ -54,6 +54,13 @@ pipeline {
 
                                             }
                                         }
+                    post {
+
+                                  failure {
+                                      mail bcc: '', body: 'process Failed!!!', cc: '', from: '', replyTo: '', subject: 'process Faild', to: 'km_belhadef@esi.dz'
+                                  }
+
+                          }
 
 
 }

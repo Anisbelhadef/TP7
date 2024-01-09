@@ -56,8 +56,8 @@ public class MatrixMathematics {
 		Matrix mat = new Matrix(matrix.getNrows()-1, matrix.getNcols()-1);
 		int r = -1;
 		for (int i=0;i<matrix.getNrows();i++) {
-			if (i==excluding_row)
-				continue;
+			if (i==excluding_row){
+				continue;}
 				r++;
 				int c = -1;
 			for (int j=0;j<matrix.getNcols();j++) {
