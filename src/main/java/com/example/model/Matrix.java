@@ -9,9 +9,6 @@ public class Matrix {
 	public Matrix() {
 	}
 
-	public double[][] getData() {
-		return data;
-	}
 
 	public void setData(double[][] data) {
 		this.data = data;
