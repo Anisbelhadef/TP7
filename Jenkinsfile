@@ -46,6 +46,13 @@ pipeline {
 
                                        }
                                    }
+                 stage("notification") {
+                                            steps {
+                                                 notifyEvents message: 'Pipeline <b> is sucessufuly termined</b>', token: '1-vgfjbnpingpfksdpm9zidbxgf5urli'
+                                                 mail bcc: '', body: 'Pipeline <b> is sucessufuly termined</b>', cc: '', from: '', replyTo: '', subject: 'process Success', to: 'ka_boukef@esi.dz'
+
+                                            }
+                                        }
 
 
 }
