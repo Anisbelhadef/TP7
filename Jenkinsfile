@@ -40,13 +40,13 @@ pipeline {
                              archiveArtifacts 'build/docs/'
                          }
                      }
-                stage("deploy") {
-                                       steps {
-                                           bat 'gradlew.bat publish'
-
-
-                                       }
-                                   }
+//                 stage("deploy") {
+//                                        steps {
+//                                            bat 'gradlew.bat publish'
+//
+//
+//                                        }
+//                                    }
                  stage("notification") {
                                             steps {
 
