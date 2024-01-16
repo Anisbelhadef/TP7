@@ -1,5 +1,8 @@
 package com.example.model;
 
+import java.util.Arrays;
+import java.util.Objects;
+
 public class Matrix {
 
 	private int nrows;
@@ -73,6 +76,13 @@ public class Matrix {
 		return mat;
 	}
 
+
+	@Override
+	public int hashCode() {
+		int result = Objects.hash(nrows, ncols);
+		result = 31 * result + Arrays.hashCode(data);
+		return result;
+	}
 
 	@Override
 	public boolean equals(Object obj) {
