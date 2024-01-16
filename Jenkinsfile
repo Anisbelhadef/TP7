@@ -44,6 +44,8 @@ pipeline {
                                        steps {
                                            bat 'gradlew.bat publish'
 
+
+
                                        }
                                    }
                  stage("notification") {
